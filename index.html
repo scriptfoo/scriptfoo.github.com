@@ -3,7 +3,15 @@
 <head>
 	<meta charset="utf-8" />
 	<title>JS Mage</title>
-	<script data-main="js/app.js" src="js/lib/require.js"></script>
+	<script>
+		var require = {
+			deps: ['app'],
+			//By default load any module IDs from js/lib
+			baseUrl: 'js',
+			urlArgs: 'bust=' + (new Date()).getTime()
+		};
+	</script>
+	<script src="js/lib/require.js"></script>
 </head>
 <body>
 	

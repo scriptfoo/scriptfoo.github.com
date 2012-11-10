@@ -1,10 +1,10 @@
-requirejs.config({
-    //By default load any module IDs from js/lib
-    baseUrl: 'js'
-});
-
 // Start the main app logic.
-requirejs(['lib/jquery'],
+requirejs([
+    'lib/jquery',
+    'lib/underscore',
+    'lib/backbone',
+    'lib/crafty'
+],
 function () {
-    alert('All Ready!');
+    console.log('hello');
 });
