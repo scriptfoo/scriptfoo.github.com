@@ -9,6 +9,10 @@
 			//By default load any module IDs from js/lib
 			baseUrl: 'js',
 			urlArgs: 'bust=' + (new Date()).getTime(),
+			paths: {
+				// Makes ACE behave
+				ace: 'lib/ace'
+			},
 			shim: {
 				'lib/backbone': {
 					deps: ['lib/underscore', 'lib/jquery']
