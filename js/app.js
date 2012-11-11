@@ -21,6 +21,10 @@ function () {
 		// Create the router instance
 		App.Router = new App.lib.Router();
 		// Start the application
-		Backbone.history.start({pushState: true});
+		Backbone.history.start({
+			pushState: true,
+			// This ensures we can run this file locally without a webserver
+			root: window.location.host + window.location.pathname
+		});
 	});
 });
