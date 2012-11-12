@@ -14,6 +14,14 @@ function () {
 		template: {}
 	};
 
+	$(function () {
+		// As soon as DOM is ready, we look for our templates and store them
+		$('script.template').each(function () {
+			var $script = $(this);
+			App.template[$script.data('path')] = $script.html();
+		});
+	});
+
 	requirejs([
 		'app/backbone/Router'
 	],
