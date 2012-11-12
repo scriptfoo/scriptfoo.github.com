@@ -3,26 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>JS Mage</title>
-	<link type="text/css" href="/css/styles.css" rel="stylesheet">
-	<script>
-		var require = {
-			deps: ['app'],
-			//By default load any module IDs from js/lib
-			baseUrl: 'js',
-			urlArgs: 'bust=' + (new Date()).getTime(),
-			paths: {
-				// Makes ACE behave
-				ace: 'lib/ace'
-			},
-			shim: {
-				'lib/backbone': {
-					deps: ['lib/underscore', 'lib/jquery']
-				},
-				'app/backbone/HomePageView': {deps: ['app/backbone/PageView']}
-			}
-		};
-	</script>
-	<script src="js/lib/require.js"></script>
+	<link type="text/css" href="css/styles.css" rel="stylesheet">
 	<script type="html/mustache" class="template" data-path="layout/default">
 		<div id="page">
 			<h1>{{pageTitle}}</h1>
@@ -34,6 +15,23 @@
 	<script type="html/mustache" class="template" data-path="page/home">
 		<p>{{message}}</p>
 	</script>
+	<script>
+		var require = {
+			deps: ['main'],
+			//By default load any module IDs from js/lib
+			baseUrl: 'lib',
+			urlArgs: 'bust=' + (new Date()).getTime(),
+			shim: {
+				// Shims are needed for any library that doesn't support AMD
+				'backbone': {
+					deps: ['underscore', 'jquery'],
+					exports: 'Backbone'
+				},
+				'underscore': {exports: '_'}
+			}
+		};
+	</script>
+	<script src="lib/require.js"></script>
 </head>
 <body>
 
