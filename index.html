@@ -16,7 +16,8 @@
 			shim: {
 				'lib/backbone': {
 					deps: ['lib/underscore', 'lib/jquery']
-				}
+				},
+				'app/backbone/HomePageView': {deps: ['app/backbone/PageView']}
 			}
 		};
 	</script>
@@ -25,7 +26,7 @@
 		<div id="page">
 			<h1>{{pageTitle}}</h1>
 			<div id="mainContent">
-				{{{body}}}
+				{{>body}}
 			<div>
 		</div>
 	</script>

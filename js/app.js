@@ -2,6 +2,7 @@
 requirejs([
 	// All the lib/* dependencies
 	'lib/backbone', // This dependency loads jquery and underscore for us
+	'lib/hogan',    // This is a mustache compiler
 	'lib/crafty'
 ],
 function () {

@@ -3,6 +3,10 @@ App.lib.Router = Backbone.Router.extend({
 		"": "home"
 	},
 	home: function() {
-		console.log("I'm home!");
+		requirejs([
+			'app/backbone/HomePageView'
+		], function () {
+			this.currentPage = new App.lib.HomePageView();
+		});
 	}
 });
