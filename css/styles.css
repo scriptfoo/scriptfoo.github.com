@@ -384,3 +384,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* line 1, ../scss/_layout.scss */
+#game-editor {
+  width: 100%;
+  height: 400px;
+}
