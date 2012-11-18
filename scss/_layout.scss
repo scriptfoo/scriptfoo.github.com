@@ -1,4 +1,18 @@
-#game-editor { 
-	width: 100%;
+#game-editor {
+	position: relative;
+	width: 950px;
 	height:400px;
+}
+
+header, footer {
+	@include container;
+
+	nav {
+		@include column(16, true);
+	}
+}
+
+#pageBody {
+	@include container;
+
 }

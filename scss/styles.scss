@@ -7,6 +7,12 @@
 @import "compass/utilities";
 @import "compass/css3";
 
+$blueprint-grid-columns: 16;
+$blueprint-container-size: 950px;
+$blueprint-grid-margin: 10px;
+$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
+$blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
+
 @import "mixins";
 @import "theme";
 @import "classes";
