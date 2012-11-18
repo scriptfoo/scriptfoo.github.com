@@ -385,6 +385,11 @@ table {
   border-spacing: 0;
 }
 
+/**
+ * Colors by name.
+ * These colors are not to be used outside of the theme file. They are basically
+ * our color palette.
+ */
 /* line 1, ../scss/_layout.scss */
 #game-editor {
   width: 100%;
