@@ -35,6 +35,45 @@ $color-white: #FFFFFF;
 	border: 2px solid $color-fuscous-grey;
 }
 
+%theme-game-toolbar {
+	color: $color-white;
+	background: $color-fuscous-grey;
+	border-top: 1px solid $color-bleached-cedar;
+	border-bottom: 1px solid $color-bleached-cedar;
+}
+
+%theme-form-button {
+	@include text-shadow(0px 1px 0px rgba($color-black, 0.2));
+
+	font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	list-style: none;
+	display: inline;
+	color: $color-white;
+
+	font-size: 14px;
+
+	@include background(linear-gradient($color-bahia, $color-fruit-salad));
+	@include border-radius(2px);
+	@include box-shadow(rgba($color-white, 0.3) 0px 1px 0px 0px inset, rgba($color-black, 0.7) 0px 3px 7px);
+
+	color: $color-white;
+	border: 1px solid $color-vida-loca;
+	background-color: $color-bahia;
+	font-size: 14px;
+	text-align: center;
+	font-weight: 400;
+	text-decoration: none;
+	
+	&:hover {
+		@include background(linear-gradient($color-limeade, $color-bilbao));
+		@include box-shadow(rgba($color-black, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px);
+
+		background-color: $color-fruit-salad;
+		border: 1px solid $color-bilbao;
+	}
+}
+
 /**
  * Navigation Related Theme Styles
  */

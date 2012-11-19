@@ -20,4 +20,5 @@ $blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
 @import "layout";
 
 @import "module/navigation";
+@import "module/forms";
 @import "module/gameComponents";

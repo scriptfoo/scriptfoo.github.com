@@ -8,3 +8,8 @@
 .l-game {
 	@extend %theme-game-wrapper;
 }
+
+.l-game-toolbar {
+	@extend %theme-game-toolbar;
+	height: 45px;
+}
