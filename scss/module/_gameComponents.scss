@@ -1,0 +1,10 @@
+#game-editor {
+	position: relative;
+	width: 970px; // We add an extra 20px in order to hide the scrollbar :)
+	height:400px;
+	font-size: 14px;
+}
+
+.l-game {
+	@extend %theme-game-wrapper;
+}

@@ -390,6 +390,85 @@ table {
  * These colors are not to be used outside of the theme file. They are basically
  * our color palette.
  */
+/* line 21, ../scss/_theme.scss */
+body {
+  background: #282828;
+}
+
+/* line 25, ../scss/_theme.scss */
+.l-page:before {
+  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 3px;
+  -o-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 1px 3px;
+  background: url(../images/nav-bg.gif) #383838;
+  border-bottom: 4px solid #484848;
+}
+
+/* line 32, ../scss/_theme.scss */
+.l-game {
+  -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
+  -o-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
+  border: 2px solid #383838;
+}
+
+/**
+ * Navigation Related Theme Styles
+ */
+/* line 41, ../scss/_theme.scss */
+.l-nav-button {
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  list-style: none;
+  display: inline;
+  color: white;
+  font-size: 14px;
+}
+/* line 52, ../scss/_theme.scss */
+.l-nav-button a {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10));
+  background: -webkit-linear-gradient(#93bd20, #659e10);
+  background: -moz-linear-gradient(#93bd20, #659e10);
+  background: -o-linear-gradient(#93bd20, #659e10);
+  background: -ms-linear-gradient(#93bd20, #659e10);
+  background: linear-gradient(#93bd20, #659e10);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
+  -o-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
+  color: white;
+  border: 1px solid #5d910b;
+  background-color: #93bd20;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: none;
+}
+/* line 65, ../scss/_theme.scss */
+.l-nav-button a:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
+  background: -webkit-linear-gradient(#749619, #527f0e);
+  background: -moz-linear-gradient(#749619, #527f0e);
+  background: -o-linear-gradient(#749619, #527f0e);
+  background: -ms-linear-gradient(#749619, #527f0e);
+  background: linear-gradient(#749619, #527f0e);
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
+  -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
+  background-color: #659e10;
+  border: 1px solid #527f0e;
+}
+
 /*
  * Clearfix: contain floats
  *
@@ -405,36 +484,121 @@ table {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 1, ../scss/_layout.scss */
-#game-editor {
-  position: relative;
-  width: 950px;
-  height: 400px;
+/* line 5, ../scss/_base.scss */
+ul {
+  padding: 0;
+  margin: 0;
 }
 
-/* line 7, ../scss/_layout.scss */
-header, footer {
+/* line 1, ../scss/_layout.scss */
+.l-page:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+}
+
+/* line 14, ../scss/_layout.scss */
+.l-header, .l-footer {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 10, ../scss/_layout.scss */
-header nav, footer nav {
+/* line 17, ../scss/_layout.scss */
+.l-header nav, .l-footer nav {
   display: inline;
   float: left;
   margin-right: 0;
   width: 950px;
 }
 /* line 147, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html header nav, * html footer nav {
+* html .l-header nav, * html .l-footer nav {
   overflow-x: hidden;
 }
 
-/* line 15, ../scss/_layout.scss */
-#pageBody {
+/* line 22, ../scss/_layout.scss */
+.l-header {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+/* line 27, ../scss/_layout.scss */
+.l-game {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+}
+/* line 30, ../scss/_layout.scss */
+.l-game .l-game-wrapper {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+}
+/* line 147, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .l-game .l-game-wrapper {
+  overflow-x: hidden;
+}
+
+/* line 5, ../scss/module/_navigation.scss */
+.module-horizontal-navigation, .l-nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 60, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.module-horizontal-navigation li, .l-nav li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.module-horizontal-navigation li:first-child, .l-nav li:first-child, .module-horizontal-navigation li.first, .l-nav li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.module-horizontal-navigation li:last-child, .l-nav li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.module-horizontal-navigation li.last, .l-nav li.last {
+  padding-right: 0;
+}
+
+/* line 11, ../scss/module/_navigation.scss */
+.l-nav {
+  margin-top: 6px;
+}
+
+/* line 17, ../scss/module/_navigation.scss */
+.l-nav-button {
+  line-height: 50px;
+}
+/* line 22, ../scss/module/_navigation.scss */
+.l-nav-button a {
+  padding: 10px 12px;
+  margin-top: 6px;
+  line-height: 14px;
+  display: inline-block;
+}
+
+/* line 1, ../scss/module/_gameComponents.scss */
+#game-editor {
+  position: relative;
+  width: 970px;
+  height: 400px;
+  font-size: 14px;
 }

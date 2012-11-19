@@ -1,0 +1,28 @@
+.module-navigation {
+
+}
+
+.module-horizontal-navigation {
+	@extend .module-navigation;
+
+	@include horizontal-list;
+}
+
+.l-nav {
+	@extend .module-horizontal-navigation;
+
+	margin-top: 6px;
+}
+
+.l-nav-button {
+	@extend %theme-nav-button;
+
+	line-height: 50px;
+
+	a {
+		padding: 10px 12px;
+		margin-top: 6px;
+		line-height: 14px;
+		display: inline-block;
+	}
+}

@@ -1,10 +1,17 @@
-#game-editor {
-	position: relative;
-	width: 950px;
-	height:400px;
+.l-page:before {
+	@extend %theme-banner;
+
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 60px;
 }
 
-header, footer {
+.l-header, .l-footer {
 	@include container;
 
 	nav {
@@ -12,7 +19,15 @@ header, footer {
 	}
 }
 
-#pageBody {
+.l-header {
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.l-game {
 	@include container;
 
+	& .l-game-wrapper {
+		@include column(16, true);
+	}
 }
