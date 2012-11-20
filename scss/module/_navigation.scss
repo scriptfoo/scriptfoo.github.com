@@ -3,7 +3,7 @@
 }
 
 .module-horizontal-navigation {
-	@extend .module-navigation;
+	//@extend .module-navigation;
 
 	@include horizontal-list;
 }

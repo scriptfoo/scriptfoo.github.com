@@ -397,9 +397,8 @@ body {
 
 /* line 25, ../scss/_theme.scss */
 .l-page:before {
-  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 3px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 3px;
-  -o-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.25) 0 1px 3px;
   background: url(../images/nav-bg.gif) #383838;
   border-bottom: 4px solid #484848;
@@ -407,9 +406,8 @@ body {
 
 /* line 32, ../scss/_theme.scss */
 .l-game {
-  -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
-  -o-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
   box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
   border: 2px solid #383838;
 }
@@ -435,17 +433,14 @@ body {
   background: -webkit-linear-gradient(#93bd20, #659e10);
   background: -moz-linear-gradient(#93bd20, #659e10);
   background: -o-linear-gradient(#93bd20, #659e10);
-  background: -ms-linear-gradient(#93bd20, #659e10);
   background: linear-gradient(#93bd20, #659e10);
-  -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-  -o-border-radius: 2px;
+  -moz-border-radius: 2px;
   -ms-border-radius: 2px;
-  -khtml-border-radius: 2px;
+  -o-border-radius: 2px;
   border-radius: 2px;
-  -moz-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
   -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
-  -o-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
   box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
   color: white;
   border: 1px solid #5d910b;
@@ -461,11 +456,9 @@ body {
   background: -webkit-linear-gradient(#749619, #527f0e);
   background: -moz-linear-gradient(#749619, #527f0e);
   background: -o-linear-gradient(#749619, #527f0e);
-  background: -ms-linear-gradient(#749619, #527f0e);
   background: linear-gradient(#749619, #527f0e);
-  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
-  -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
   background-color: #659e10;
   border: 1px solid #527f0e;
@@ -490,17 +483,14 @@ body {
   background: -webkit-linear-gradient(#93bd20, #659e10);
   background: -moz-linear-gradient(#93bd20, #659e10);
   background: -o-linear-gradient(#93bd20, #659e10);
-  background: -ms-linear-gradient(#93bd20, #659e10);
   background: linear-gradient(#93bd20, #659e10);
-  -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-  -o-border-radius: 2px;
+  -moz-border-radius: 2px;
   -ms-border-radius: 2px;
-  -khtml-border-radius: 2px;
+  -o-border-radius: 2px;
   border-radius: 2px;
-  -moz-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
   -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
-  -o-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
   box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
   color: white;
   border: 1px solid #5d910b;
@@ -516,11 +506,9 @@ body {
   background: -webkit-linear-gradient(#749619, #527f0e);
   background: -moz-linear-gradient(#749619, #527f0e);
   background: -o-linear-gradient(#749619, #527f0e);
-  background: -ms-linear-gradient(#749619, #527f0e);
   background: linear-gradient(#749619, #527f0e);
-  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
-  -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
   background-color: #659e10;
   border: 1px solid #527f0e;
@@ -573,7 +561,7 @@ ul {
   margin-right: 0;
   width: 950px;
 }
-/* line 147, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .l-header nav, * html .l-footer nav {
   overflow-x: hidden;
 }
@@ -598,7 +586,7 @@ ul {
   margin-right: 0;
   width: 950px;
 }
-/* line 147, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .l-game .l-game-wrapper {
   overflow-x: hidden;
 }
@@ -611,26 +599,26 @@ ul {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 60, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 60, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .module-horizontal-navigation li, .l-nav li {
   list-style-image: none;
   list-style-type: none;
-  margin-left: 0px;
+  margin-left: 0;
   white-space: nowrap;
   display: inline;
   float: left;
   padding-left: 4px;
   padding-right: 4px;
 }
-/* line 48, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 48, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .module-horizontal-navigation li:first-child, .l-nav li:first-child, .module-horizontal-navigation li.first, .l-nav li.first {
   padding-left: 0;
 }
-/* line 49, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 49, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .module-horizontal-navigation li:last-child, .l-nav li:last-child {
   padding-right: 0;
 }
-/* line 50, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 50, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .module-horizontal-navigation li.last, .l-nav li.last {
   padding-right: 0;
 }
@@ -666,7 +654,15 @@ ul {
   font-size: 14px;
 }
 
-/* line 12, ../scss/module/_gameComponents.scss */
+/* line 8, ../scss/module/_gameComponents.scss */
+.l-editor-shade {
+  width: 970px;
+  height: 400px;
+  position: absolute;
+  z-index: 100;
+}
+
+/* line 19, ../scss/module/_gameComponents.scss */
 .l-game-toolbar {
   height: 45px;
 }
