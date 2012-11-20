@@ -673,7 +673,15 @@ ul {
   font-size: 14px;
 }
 
-/* line 12, ../scss/module/_gameComponents.scss */
+/* line 8, ../scss/module/_gameComponents.scss */
+.l-editor-shade {
+  width: 970px;
+  height: 400px;
+  position: absolute;
+  z-index: 100;
+}
+
+/* line 19, ../scss/module/_gameComponents.scss */
 .l-game-toolbar {
   height: 45px;
 }

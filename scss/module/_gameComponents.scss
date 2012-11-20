@@ -5,6 +5,13 @@
 	font-size: 14px;
 }
 
+.l-editor-shade {
+	width: 970px;
+	height: 400px;
+	position: absolute;
+	z-index: 100;
+}
+
 .l-game {
 	@extend %theme-game-wrapper;
 }
