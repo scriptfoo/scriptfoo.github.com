@@ -33,14 +33,15 @@
 }
 
 .dialog {
-	width: 860px; 
-	background: #E8E6DC; 
-	min-height: 100px; 
-	position: absolute;	
+	@include border-radius(5px);
+
+	width: 860px;
+	background: #E8E6DC;
+	min-height: 100px;
+	position: absolute;
 	bottom: 162px;
 	margin-left: 20px;
 	z-index: 2;
-	@include border-radius(5px);
 	border: 5px solid $color-vida-loca;
 	display: none;
 	padding: 0 20px;
