@@ -17,6 +17,9 @@
 			//By default load any module IDs from js/lib
 			baseUrl: 'lib',
 			urlArgs: 'bust=' + (new Date()).getTime(),
+			paths: {
+				'template': '../template'
+			},
 			shim: {
 				// Shims are needed for any library that doesn't support AMD
 				'backbone': {
