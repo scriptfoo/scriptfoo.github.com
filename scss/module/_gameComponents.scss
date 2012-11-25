@@ -5,6 +5,24 @@
 	font-size: 14px;
 }
 
+#cr-stage {
+	&.day {
+		background-color: #A5B89B;
+
+		&:before {
+			@include background-image(linear-gradient(rgba(#B1D4C6, 0.8), rgba(#B1D4C6, 0), rgba(#B1D4C6, 0)));
+			content: ' ';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+			z-index: 1000;
+		}
+	}
+}
+
 .l-editor-shade {
 	width: 970px;
 	height: 400px;
