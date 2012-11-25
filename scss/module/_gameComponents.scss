@@ -65,3 +65,38 @@
 	@extend %theme-game-toolbar;
 	height: 45px;
 }
+
+.widget-game-dialog {
+	position: absolute;
+	top: 370px;
+	z-index: 50;
+	width: 950px;
+	height: 110px;
+
+	.speaker {
+		@include border-radius(10px);
+		@include box-shadow(#000 0 0 10px 0);
+		@include background-image(radial-gradient(center, rgba(#FFF, 0.7) 0px, rgba(#000, 0.8) 120px));
+
+		height: 100px;
+		width: 100px;
+		float: left;
+		margin-left: 210px;
+		border: 1px solid #000;
+	}
+
+	.text {
+		@include border-radius(10px);
+		@include box-shadow(#000 0 0 10px 0);
+		@include box-sizing(border-box); // BECAUSE I'M CRAZY!
+
+		width: 500px;
+		height: 100px;
+		padding: 10px;
+		margin-left: 10px;
+		float: left;
+		color: #A6CB92;
+		background: rgba(#000, 0.8);
+		border: 1px solid #000;
+	}
+}
