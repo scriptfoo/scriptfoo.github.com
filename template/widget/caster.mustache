@@ -1,0 +1,19 @@
+<script>
+(function() {
+	function cast(Game) {
+		var requirejs = null;
+		var require = null;
+		var define = null;
+
+		{{#exposed}}
+		var {{key}} = Game["{{key}}"];
+		{{/exposed}}
+
+		{{{spell}}}
+	}
+
+	requirejs(['app/app'], function (App) {
+		cast(App.exposed);
+	});
+}());
+</script>
