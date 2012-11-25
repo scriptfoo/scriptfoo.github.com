@@ -1,0 +1,1 @@
+montage *.png  -mode concatenate -geometry "250x60>+0+0" -tile x1 -background none  Sheet.png
