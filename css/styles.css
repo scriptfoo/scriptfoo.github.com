@@ -769,13 +769,16 @@ ul {
   background-image: -moz-radial-gradient(center, rgba(255, 255, 255, 0.7) 0px, rgba(0, 0, 0, 0.8) 120px);
   background-image: -o-radial-gradient(center, rgba(255, 255, 255, 0.7) 0px, rgba(0, 0, 0, 0.8) 120px);
   background-image: radial-gradient(center, rgba(255, 255, 255, 0.7) 0px, rgba(0, 0, 0, 0.8) 120px);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   height: 100px;
   width: 100px;
   float: left;
   margin-left: 210px;
   border: 1px solid #000;
 }
-/* line 88, ../scss/module/_gameComponents.scss */
+/* line 89, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .text {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
