@@ -674,16 +674,7 @@ ul {
 }
 
 /* line 9, ../scss/module/_gameComponents.scss */
-#cr-stage.day {
-  background-color: #A5B89B;
-}
-/* line 12, ../scss/module/_gameComponents.scss */
-#cr-stage.day:before {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(177, 212, 198, 0.8)), color-stop(50%, rgba(177, 212, 198, 0)), color-stop(100%, rgba(177, 212, 198, 0)));
-  background-image: -webkit-linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
-  background-image: -moz-linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
-  background-image: -o-linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
-  background-image: linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
+#cr-stage:before {
   content: ' ';
   position: absolute;
   top: 0;
@@ -693,8 +684,56 @@ ul {
   display: block;
   z-index: 1000;
 }
+/* line 20, ../scss/module/_gameComponents.scss */
+#cr-stage.day {
+  background-color: #A5B89B;
+}
+/* line 23, ../scss/module/_gameComponents.scss */
+#cr-stage.day:before {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(177, 212, 198, 0.8)), color-stop(50%, rgba(177, 212, 198, 0)), color-stop(100%, rgba(177, 212, 198, 0)));
+  background-image: -webkit-linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
+  background-image: -moz-linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
+  background-image: -o-linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
+  background-image: linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
+}
+/* line 28, ../scss/module/_gameComponents.scss */
+#cr-stage.dayFoggy {
+  background-color: #889A8E;
+}
+/* line 31, ../scss/module/_gameComponents.scss */
+#cr-stage.dayFoggy:before {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(247, 237, 255, 0.8)), color-stop(100%, rgba(247, 237, 255, 0.3)));
+  background-image: -webkit-linear-gradient(rgba(247, 237, 255, 0.8), rgba(247, 237, 255, 0.3));
+  background-image: -moz-linear-gradient(rgba(247, 237, 255, 0.8), rgba(247, 237, 255, 0.3));
+  background-image: -o-linear-gradient(rgba(247, 237, 255, 0.8), rgba(247, 237, 255, 0.3));
+  background-image: linear-gradient(rgba(247, 237, 255, 0.8), rgba(247, 237, 255, 0.3));
+}
+/* line 36, ../scss/module/_gameComponents.scss */
+#cr-stage.evening {
+  background-color: #806363;
+}
+/* line 39, ../scss/module/_gameComponents.scss */
+#cr-stage.evening:before {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(184, 212, 177, 0.8)), color-stop(50%, rgba(184, 212, 177, 0)), color-stop(100%, rgba(184, 212, 177, 0)));
+  background-image: -webkit-linear-gradient(rgba(184, 212, 177, 0.8), rgba(184, 212, 177, 0), rgba(184, 212, 177, 0));
+  background-image: -moz-linear-gradient(rgba(184, 212, 177, 0.8), rgba(184, 212, 177, 0), rgba(184, 212, 177, 0));
+  background-image: -o-linear-gradient(rgba(184, 212, 177, 0.8), rgba(184, 212, 177, 0), rgba(184, 212, 177, 0));
+  background-image: linear-gradient(rgba(184, 212, 177, 0.8), rgba(184, 212, 177, 0), rgba(184, 212, 177, 0));
+}
+/* line 44, ../scss/module/_gameComponents.scss */
+#cr-stage.night {
+  background-color: #63807B;
+}
+/* line 47, ../scss/module/_gameComponents.scss */
+#cr-stage.night:before {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(30, 30, 42, 0.8)), color-stop(50%, rgba(30, 30, 42, 0)), color-stop(100%, rgba(30, 30, 42, 0)));
+  background-image: -webkit-linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
+  background-image: -moz-linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
+  background-image: -o-linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
+  background-image: linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
+}
 
-/* line 26, ../scss/module/_gameComponents.scss */
+/* line 53, ../scss/module/_gameComponents.scss */
 .l-editor-shade {
   width: 970px;
   height: 400px;
@@ -702,7 +741,7 @@ ul {
   z-index: 100;
 }
 
-/* line 37, ../scss/module/_gameComponents.scss */
+/* line 64, ../scss/module/_gameComponents.scss */
 .l-game-toolbar {
   height: 45px;
 }

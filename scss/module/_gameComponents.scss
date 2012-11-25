@@ -6,19 +6,46 @@
 }
 
 #cr-stage {
+	&:before {
+		content: ' ';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index: 1000;
+	}
+
 	&.day {
 		background-color: #A5B89B;
 
 		&:before {
 			@include background-image(linear-gradient(rgba(#B1D4C6, 0.8), rgba(#B1D4C6, 0), rgba(#B1D4C6, 0)));
-			content: ' ';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			display: block;
-			z-index: 1000;
+		}
+	}
+
+	&.dayFoggy {
+		background-color: #889A8E;
+
+		&:before {
+			@include background-image(linear-gradient(rgba(#F7EDFF, 0.8), rgba(#F7EDFF, 0.3)));
+		}
+	}
+
+	&.evening {
+		background-color: #806363;
+
+		&:before {
+			@include background-image(linear-gradient(rgba(#B8D4B1, 0.8), rgba(#B8D4B1, 0), rgba(#B8D4B1, 0)));
+		}
+	}
+
+	&.night {
+		background-color: #63807B;
+
+		&:before {
+			@include background-image(linear-gradient(rgba(#1E1E2A, 0.8), rgba(#1E1E2A, 0), rgba(#1E1E2A, 0)));
 		}
 	}
 }
