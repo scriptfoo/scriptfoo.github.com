@@ -84,6 +84,16 @@
 		float: left;
 		margin-left: 210px;
 		border: 1px solid #000;
+		position: relative;
+	}
+
+	.image {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
 	}
 
 	.text {

@@ -777,8 +777,18 @@ ul {
   float: left;
   margin-left: 210px;
   border: 1px solid #000;
+  position: relative;
 }
-/* line 89, ../scss/module/_gameComponents.scss */
+/* line 90, ../scss/module/_gameComponents.scss */
+.widget-game-dialog .image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 99, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .text {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
