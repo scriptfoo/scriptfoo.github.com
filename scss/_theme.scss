@@ -1,3 +1,4 @@
+$font-monospace: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 /**
  * Colors by name.
  * These colors are not to be used outside of the theme file. They are basically
@@ -17,6 +18,10 @@ $color-nero: #282828;
 $color-fuscous-grey: #383838;
 $color-bleached-cedar: #484848;
 $color-white: #FFFFFF;
+
+%font-monospace {
+	font-family: $font-monospace;
+}
 
 %theme-body {
 	background: $color-nero;

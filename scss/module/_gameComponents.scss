@@ -109,6 +109,8 @@
 	position: relative;
 
 	.action-message {
+		@extend %font-monospace;
+
 		position: absolute;
 		width: 900px;
 		left: -450px;
