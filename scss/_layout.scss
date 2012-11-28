@@ -27,8 +27,12 @@
 .l-game {
 	@include container;
 
-	& .l-game-wrapper {
+	& .l-content-wrapper {
 		@include column(16, true);
+	}
+
+	.spell-editor {
+		position: relative; // Here to prevent bug with ace editor
 	}
 }
 

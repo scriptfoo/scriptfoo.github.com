@@ -1,10 +1,3 @@
-#game-editor {
-	position: relative;
-	width: 970px; // We add an extra 20px in order to hide the scrollbar :)
-	height:400px;
-	font-size: 14px;
-}
-
 #cr-stage {
 	&:before {
 		content: ' ';
@@ -157,4 +150,11 @@
 		@include opacity(0);
 		bottom: 100px;
 	}
+}
+
+.spell-editor {
+	position: relative;
+	width: 970px; // We add an extra 20px in order to hide the scrollbar :)
+	height:400px;
+	font-size: 14px;
 }
