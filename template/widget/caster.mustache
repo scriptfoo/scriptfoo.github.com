@@ -1,19 +1,38 @@
 <script>
 (function() {
-	function cast(Game) {
+	function Spell(Game) {
 		var requirejs = null;
 		var require = null;
 		var define = null;
+		// We're gona capture some stuff!
+		var captured = {};
 
 		{{#exposed}}
 		var {{key}} = Game["{{key}}"];
 		{{/exposed}}
 
 		{{{spell}}}
+
+		// Capture all the variables
+		{{#capture}}
+		captured["{{variable}}"] = {{variable}};
+		{{/capture}}
+
+		return {
+			getCaptured: function () {
+				return captured;
+			},
+			executeHooks: function (SpellHooksCollection) {
+				SpellHooksCollection.each(_.bind(function (SpellHookModel) {
+					SpellHookModel.execute(this);
+				}, this));
+			}
+		};
 	}
 
 	requirejs(['app/app'], function (App) {
-		cast(App.exposed);
+		var spell = new Spell(App.exposed);
+		spell.executeHooks(App.SpellHooksCollection);
 	});
 }());
 </script>
