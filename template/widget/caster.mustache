@@ -6,6 +6,9 @@
 		var define = null;
 		// We're gona capture some stuff!
 		var captured = {};
+		{{#capture}}
+		var {{variable}}; // Define in case the user doesn't
+		{{/capture}}
 
 		{{#exposed}}
 		var {{key}} = Game["{{key}}"];
@@ -24,7 +27,7 @@
 			},
 			executeHooks: function (SpellHooksCollection) {
 				SpellHooksCollection.each(_.bind(function (SpellHookModel) {
-					SpellHookModel.execute(this);
+					SpellHookModel.execute(captured);
 				}, this));
 			}
 		};
