@@ -17,6 +17,6 @@ Test out your newly granted powers and manipulate your way through the adventure
 
 ### Contributors
 
-* Lorenzo Pisani
-* LaTorri Lindsay
-* M. 'Hoke' Hokanson
+* Lorenzo Pisani [@zeelot3k](http://twitter.com/zeelot3k) | [zeelot3k.com](http://zeelot3k.com)
+* LaTorri Lindsay [@latorril](http://twitter.com/latorril) | [latorrilindsay.com](http://latorrilindsay.com)
+* M. 'Hoke' Hokanson [@h0ke](http://twitter.com/h0ke) | [h0ke.com](http://h0ke.com)
