@@ -28,6 +28,7 @@
 			executeHooks: function (SpellHooksCollection) {
 				SpellHooksCollection.each(_.bind(function (SpellHookModel) {
 					SpellHookModel.execute(captured);
+					SpellHookModel.get('runOnce') && SpellHooksCollection.remove(SpellHookModel);
 				}, this));
 			}
 		};
