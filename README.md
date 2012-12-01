@@ -6,6 +6,8 @@ As you meet new characters, the mysteries of the underlying logical force will b
 
 Test out your newly granted powers and manipulate your way through the adventure.
 
+![ScriptFoo](http://scriptfoo.github.com/game-off-2012/screenshot.png "ScriptFoo")
+
 ## Open Source Projects
 
 * Crafty.js
@@ -14,6 +16,16 @@ Test out your newly granted powers and manipulate your way through the adventure
 * jQuery
 * mondernizr
 * Hogan.js
+
+## Roadmap 
+
+* New quests (lessons)
+* Add rabbit quest
+* Add maze puzzle 
+* Add more puzzles and mazes
+* New scenes
+* New characters
+* Sound effects
 
 ### Contributors
 
