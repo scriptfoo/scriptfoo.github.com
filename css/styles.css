@@ -835,8 +835,8 @@ ul {
   text-align: center;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  moz-animation-duration: 2s;
-  -webkit-animation-duration: 2s;
+  moz-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
   -moz-animation-name: slideOff;
   -webkit-animation-name: slideOff;
 }
