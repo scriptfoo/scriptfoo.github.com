@@ -28,10 +28,7 @@ $color-white: #FFFFFF;
 }
 
 %theme-banner {
-	@include box-shadow(rgba($color-black, 0.25) 0 1px 3px);
-
-	background: url(../images/nav-bg.gif) $color-fuscous-grey;
-	border-bottom: 4px solid $color-bleached-cedar;
+	background: url(../images/logo.png) center no-repeat;
 }
 
 %theme-game-wrapper {

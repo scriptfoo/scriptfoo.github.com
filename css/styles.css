@@ -402,22 +402,19 @@ body {
 
 /* line 30, ../scss/_theme.scss */
 .l-page:before {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 3px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 3px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 1px 3px;
-  background: url(../images/nav-bg.gif) #383838;
-  border-bottom: 4px solid #484848;
+  background: url(../images/logo.png) center no-repeat;
 }
 
-/* line 37, ../scss/_theme.scss */
+/* line 34, ../scss/_theme.scss */
 .l-game {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
+  -o-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
   box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
   border: 2px solid #383838;
 }
 
-/* line 43, ../scss/_theme.scss */
+/* line 40, ../scss/_theme.scss */
 .l-game-toolbar {
   color: white;
   background: #383838;
@@ -425,7 +422,7 @@ body {
   border-bottom: 1px solid #484848;
 }
 
-/* line 50, ../scss/_theme.scss */
+/* line 47, ../scss/_theme.scss */
 .l-button {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -438,14 +435,17 @@ body {
   background: -webkit-linear-gradient(#93bd20, #659e10);
   background: -moz-linear-gradient(#93bd20, #659e10);
   background: -o-linear-gradient(#93bd20, #659e10);
+  background: -ms-linear-gradient(#93bd20, #659e10);
   background: linear-gradient(#93bd20, #659e10);
-  -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
+  -webkit-border-radius: 2px;
   -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
   border-radius: 2px;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
   -moz-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
+  -o-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
   box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
   color: white;
   border: 1px solid #5d910b;
@@ -455,15 +455,17 @@ body {
   font-weight: 400;
   text-decoration: none;
 }
-/* line 73, ../scss/_theme.scss */
+/* line 70, ../scss/_theme.scss */
 .l-button:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
   background: -webkit-linear-gradient(#749619, #527f0e);
   background: -moz-linear-gradient(#749619, #527f0e);
   background: -o-linear-gradient(#749619, #527f0e);
+  background: -ms-linear-gradient(#749619, #527f0e);
   background: linear-gradient(#749619, #527f0e);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
+  -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
   background-color: #659e10;
   border: 1px solid #527f0e;
@@ -472,7 +474,7 @@ body {
 /**
  * Navigation Related Theme Styles
  */
-/* line 85, ../scss/_theme.scss */
+/* line 82, ../scss/_theme.scss */
 .l-nav-button {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -482,20 +484,23 @@ body {
   color: white;
   font-size: 14px;
 }
-/* line 96, ../scss/_theme.scss */
+/* line 93, ../scss/_theme.scss */
 .l-nav-button a {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10));
   background: -webkit-linear-gradient(#93bd20, #659e10);
   background: -moz-linear-gradient(#93bd20, #659e10);
   background: -o-linear-gradient(#93bd20, #659e10);
+  background: -ms-linear-gradient(#93bd20, #659e10);
   background: linear-gradient(#93bd20, #659e10);
-  -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
+  -webkit-border-radius: 2px;
   -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
   border-radius: 2px;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
   -moz-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
+  -o-box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
   box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.7) 0px 3px 7px;
   color: white;
   border: 1px solid #5d910b;
@@ -505,15 +510,17 @@ body {
   font-weight: 400;
   text-decoration: none;
 }
-/* line 109, ../scss/_theme.scss */
+/* line 106, ../scss/_theme.scss */
 .l-nav-button a:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
   background: -webkit-linear-gradient(#749619, #527f0e);
   background: -moz-linear-gradient(#749619, #527f0e);
   background: -o-linear-gradient(#749619, #527f0e);
+  background: -ms-linear-gradient(#749619, #527f0e);
   background: linear-gradient(#749619, #527f0e);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
+  -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset, transparent 0px 1px 0px;
   background-color: #659e10;
   border: 1px solid #527f0e;
@@ -549,7 +556,7 @@ ul {
   left: 0;
   right: 0;
   width: 100%;
-  height: 60px;
+  height: 80px;
 }
 
 /* line 14, ../scss/_layout.scss */
@@ -558,54 +565,55 @@ ul {
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+  height: 80px;
 }
-/* line 17, ../scss/_layout.scss */
+/* line 19, ../scss/_layout.scss */
 .l-header nav, .l-footer nav {
   display: inline;
   float: left;
   margin-right: 0;
   width: 950px;
 }
-/* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .l-header nav, * html .l-footer nav {
   overflow-x: hidden;
 }
 
-/* line 22, ../scss/_layout.scss */
+/* line 24, ../scss/_layout.scss */
 .l-header {
   position: relative;
-  margin-bottom: 25px;
 }
 
-/* line 27, ../scss/_layout.scss */
+/* line 28, ../scss/_layout.scss */
 .l-game {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 30, ../scss/_layout.scss */
+/* line 31, ../scss/_layout.scss */
 .l-game .l-content-wrapper {
   display: inline;
   float: left;
   margin-right: 0;
   width: 950px;
 }
-/* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .l-game .l-content-wrapper {
   overflow-x: hidden;
 }
-/* line 34, ../scss/_layout.scss */
+/* line 35, ../scss/_layout.scss */
 .l-game .spell-editor {
   position: relative;
 }
 
-/* line 39, ../scss/_layout.scss */
+/* line 40, ../scss/_layout.scss */
 .dialog {
-  -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
+  -webkit-border-radius: 5px;
   -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
   border-radius: 5px;
   width: 860px;
   background: #E8E6DC;
@@ -627,26 +635,26 @@ ul {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 60, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 60, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .module-horizontal-navigation li, .l-nav li {
   list-style-image: none;
   list-style-type: none;
-  margin-left: 0;
+  margin-left: 0px;
   white-space: nowrap;
   display: inline;
   float: left;
   padding-left: 4px;
   padding-right: 4px;
 }
-/* line 48, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 48, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .module-horizontal-navigation li:first-child, .l-nav li:first-child, .module-horizontal-navigation li.first, .l-nav li.first {
   padding-left: 0;
 }
-/* line 49, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 49, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .module-horizontal-navigation li:last-child, .l-nav li:last-child {
   padding-right: 0;
 }
-/* line 50, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 50, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .module-horizontal-navigation li.last, .l-nav li.last {
   padding-right: 0;
 }
@@ -695,6 +703,7 @@ ul {
   background-image: -webkit-linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
   background-image: -moz-linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
   background-image: -o-linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
+  background-image: -ms-linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
   background-image: linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
 }
 /* line 21, ../scss/module/_gameComponents.scss */
@@ -707,6 +716,7 @@ ul {
   background-image: -webkit-linear-gradient(rgba(247, 237, 255, 0.8), rgba(247, 237, 255, 0.3));
   background-image: -moz-linear-gradient(rgba(247, 237, 255, 0.8), rgba(247, 237, 255, 0.3));
   background-image: -o-linear-gradient(rgba(247, 237, 255, 0.8), rgba(247, 237, 255, 0.3));
+  background-image: -ms-linear-gradient(rgba(247, 237, 255, 0.8), rgba(247, 237, 255, 0.3));
   background-image: linear-gradient(rgba(247, 237, 255, 0.8), rgba(247, 237, 255, 0.3));
 }
 /* line 29, ../scss/module/_gameComponents.scss */
@@ -719,6 +729,7 @@ ul {
   background-image: -webkit-linear-gradient(rgba(184, 212, 177, 0.8), rgba(184, 212, 177, 0), rgba(184, 212, 177, 0));
   background-image: -moz-linear-gradient(rgba(184, 212, 177, 0.8), rgba(184, 212, 177, 0), rgba(184, 212, 177, 0));
   background-image: -o-linear-gradient(rgba(184, 212, 177, 0.8), rgba(184, 212, 177, 0), rgba(184, 212, 177, 0));
+  background-image: -ms-linear-gradient(rgba(184, 212, 177, 0.8), rgba(184, 212, 177, 0), rgba(184, 212, 177, 0));
   background-image: linear-gradient(rgba(184, 212, 177, 0.8), rgba(184, 212, 177, 0), rgba(184, 212, 177, 0));
 }
 /* line 37, ../scss/module/_gameComponents.scss */
@@ -731,6 +742,7 @@ ul {
   background-image: -webkit-linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
   background-image: -moz-linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
   background-image: -o-linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
+  background-image: -ms-linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
   background-image: linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
 }
 
@@ -749,21 +761,25 @@ ul {
 }
 /* line 62, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .speaker {
-  -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
+  -webkit-border-radius: 10px;
   -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: black 0 0 10px 0;
   -moz-box-shadow: black 0 0 10px 0;
+  -webkit-box-shadow: black 0 0 10px 0;
+  -o-box-shadow: black 0 0 10px 0;
   box-shadow: black 0 0 10px 0;
   background-image: -webkit-gradient(radial, 50%, 0, 50%, 120, color-stop(0%, rgba(255, 255, 255, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.8)));
   background-image: -webkit-radial-gradient(center, rgba(255, 255, 255, 0.7) 0px, rgba(0, 0, 0, 0.8) 120px);
   background-image: -moz-radial-gradient(center, rgba(255, 255, 255, 0.7) 0px, rgba(0, 0, 0, 0.8) 120px);
   background-image: -o-radial-gradient(center, rgba(255, 255, 255, 0.7) 0px, rgba(0, 0, 0, 0.8) 120px);
+  background-image: -ms-radial-gradient(center, rgba(255, 255, 255, 0.7) 0px, rgba(0, 0, 0, 0.8) 120px);
   background-image: radial-gradient(center, rgba(255, 255, 255, 0.7) 0px, rgba(0, 0, 0, 0.8) 120px);
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
   height: 100px;
   width: 100px;
@@ -783,16 +799,19 @@ ul {
 }
 /* line 85, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .text {
-  -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
+  -webkit-border-radius: 10px;
   -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: black 0 0 10px 0;
   -moz-box-shadow: black 0 0 10px 0;
+  -webkit-box-shadow: black 0 0 10px 0;
+  -o-box-shadow: black 0 0 10px 0;
   box-shadow: black 0 0 10px 0;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
   width: 500px;
   height: 100px;

@@ -8,11 +8,13 @@
 	left: 0;
 	right: 0;
 	width: 100%;
-	height: 60px;
+	height: 80px;
 }
 
 .l-header, .l-footer {
 	@include container;
+
+	height: 80px;
 
 	nav {
 		@include column(16, true);
@@ -21,7 +23,6 @@
 
 .l-header {
 	position: relative;
-	margin-bottom: 25px;
 }
 
 .l-game {
