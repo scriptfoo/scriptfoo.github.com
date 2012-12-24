@@ -60,6 +60,29 @@
 .l-game-toolbar {
 	@extend %theme-game-toolbar;
 	height: 45px;
+
+	.cast {
+		float: left;
+	}
+}
+
+.l-toolbar-runes {
+	@extend %theme-toolbar-runes;
+
+	float: left;
+
+	ul {
+		list-style: none;
+		padding: 7px 7px;
+	}
+
+	li {
+		height: 30px;
+		width: 30px;
+		margin: 0 10px 0 0;
+		padding: none;
+		float: left;
+	}
 }
 
 .widget-game-dialog {

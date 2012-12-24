@@ -390,22 +390,22 @@ table {
  * These colors are not to be used outside of the theme file. They are basically
  * our color palette.
  */
-/* line 22, ../scss/_theme.scss */
+/* line 23, ../scss/_theme.scss */
 .widget-action-messages .action-message {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
-/* line 26, ../scss/_theme.scss */
+/* line 27, ../scss/_theme.scss */
 body {
   background: #282828;
 }
 
-/* line 30, ../scss/_theme.scss */
+/* line 31, ../scss/_theme.scss */
 .l-page:before {
   background: url(../images/logo.png) center no-repeat;
 }
 
-/* line 34, ../scss/_theme.scss */
+/* line 35, ../scss/_theme.scss */
 .l-game {
   -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px 2px;
@@ -414,7 +414,7 @@ body {
   border: 2px solid #383838;
 }
 
-/* line 40, ../scss/_theme.scss */
+/* line 41, ../scss/_theme.scss */
 .l-game-toolbar {
   color: white;
   background: #383838;
@@ -422,7 +422,31 @@ body {
   border-bottom: 1px solid #484848;
 }
 
-/* line 47, ../scss/_theme.scss */
+/* line 49, ../scss/_theme.scss */
+.l-toolbar-runes li {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: #282828 0 0 4px 2px;
+  -webkit-box-shadow: #282828 0 0 4px 2px;
+  -o-box-shadow: #282828 0 0 4px 2px;
+  box-shadow: #282828 0 0 4px 2px;
+  border: 1px solid #484848;
+  background: #383838;
+}
+/* line 56, ../scss/_theme.scss */
+.l-toolbar-runes li:hover {
+  -moz-box-shadow: #484848 0 0 7px 2px;
+  -webkit-box-shadow: #484848 0 0 7px 2px;
+  -o-box-shadow: #484848 0 0 7px 2px;
+  box-shadow: #484848 0 0 7px 2px;
+  border: 1px solid #a2a2a2;
+}
+
+/* line 62, ../scss/_theme.scss */
 .l-button {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -455,7 +479,7 @@ body {
   font-weight: 400;
   text-decoration: none;
 }
-/* line 70, ../scss/_theme.scss */
+/* line 85, ../scss/_theme.scss */
 .l-button:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
   background: -webkit-linear-gradient(#749619, #527f0e);
@@ -474,7 +498,7 @@ body {
 /**
  * Navigation Related Theme Styles
  */
-/* line 82, ../scss/_theme.scss */
+/* line 97, ../scss/_theme.scss */
 .l-nav-button {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -484,7 +508,7 @@ body {
   color: white;
   font-size: 14px;
 }
-/* line 93, ../scss/_theme.scss */
+/* line 108, ../scss/_theme.scss */
 .l-nav-button a {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10));
   background: -webkit-linear-gradient(#93bd20, #659e10);
@@ -510,7 +534,7 @@ body {
   font-weight: 400;
   text-decoration: none;
 }
-/* line 106, ../scss/_theme.scss */
+/* line 121, ../scss/_theme.scss */
 .l-nav-button a:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
   background: -webkit-linear-gradient(#749619, #527f0e);
@@ -761,8 +785,30 @@ ul {
 .l-game-toolbar {
   height: 45px;
 }
+/* line 64, ../scss/module/_gameComponents.scss */
+.l-game-toolbar .cast {
+  float: left;
+}
 
-/* line 65, ../scss/module/_gameComponents.scss */
+/* line 69, ../scss/module/_gameComponents.scss */
+.l-toolbar-runes {
+  float: left;
+}
+/* line 74, ../scss/module/_gameComponents.scss */
+.l-toolbar-runes ul {
+  list-style: none;
+  padding: 7px 7px;
+}
+/* line 79, ../scss/module/_gameComponents.scss */
+.l-toolbar-runes li {
+  height: 30px;
+  width: 30px;
+  margin: 0 10px 0 0;
+  padding: none;
+  float: left;
+}
+
+/* line 88, ../scss/module/_gameComponents.scss */
 .widget-game-dialog {
   position: absolute;
   top: 370px;
@@ -770,7 +816,7 @@ ul {
   width: 950px;
   height: 110px;
 }
-/* line 72, ../scss/module/_gameComponents.scss */
+/* line 95, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .speaker {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -799,7 +845,7 @@ ul {
   border: 1px solid #000;
   position: relative;
 }
-/* line 86, ../scss/module/_gameComponents.scss */
+/* line 109, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .image {
   position: absolute;
   top: 0;
@@ -808,7 +854,7 @@ ul {
   right: 0;
   margin: auto;
 }
-/* line 95, ../scss/module/_gameComponents.scss */
+/* line 118, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .text {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -834,11 +880,11 @@ ul {
   border: 1px solid #000;
 }
 
-/* line 111, ../scss/module/_gameComponents.scss */
+/* line 134, ../scss/module/_gameComponents.scss */
 .widget-action-messages {
   position: relative;
 }
-/* line 114, ../scss/module/_gameComponents.scss */
+/* line 137, ../scss/module/_gameComponents.scss */
 .widget-action-messages .action-message {
   position: absolute;
   width: 900px;
@@ -851,31 +897,31 @@ ul {
   -moz-animation-name: slideOff;
   -webkit-animation-name: slideOff;
 }
-/* line 129, ../scss/module/_gameComponents.scss */
+/* line 152, ../scss/module/_gameComponents.scss */
 .widget-action-messages .positive {
   text-shadow: 0px 0px 15px #00FF55;
   color: #DDFFAA;
 }
-/* line 133, ../scss/module/_gameComponents.scss */
+/* line 156, ../scss/module/_gameComponents.scss */
 .widget-action-messages .negative {
   text-shadow: 0px 0px 15px #FF0000;
   color: #ffcccc;
 }
-/* line 137, ../scss/module/_gameComponents.scss */
+/* line 160, ../scss/module/_gameComponents.scss */
 .widget-action-messages .method {
   text-shadow: 0px 0px 15px #BBBBBB;
   color: white;
 }
 
 @-moz-keyframes slideOff {
-  /* line 144, ../scss/module/_gameComponents.scss */
+  /* line 167, ../scss/module/_gameComponents.scss */
   from {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     bottom: 0;
   }
 
-  /* line 148, ../scss/module/_gameComponents.scss */
+  /* line 171, ../scss/module/_gameComponents.scss */
   to {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -884,14 +930,14 @@ ul {
 }
 
 @-webkit-keyframes slideOff {
-  /* line 155, ../scss/module/_gameComponents.scss */
+  /* line 178, ../scss/module/_gameComponents.scss */
   from {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     bottom: 0;
   }
 
-  /* line 159, ../scss/module/_gameComponents.scss */
+  /* line 182, ../scss/module/_gameComponents.scss */
   to {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -899,7 +945,7 @@ ul {
   }
 }
 
-/* line 165, ../scss/module/_gameComponents.scss */
+/* line 188, ../scss/module/_gameComponents.scss */
 .spell-editor {
   position: relative;
   width: 970px;
