@@ -746,12 +746,23 @@ ul {
   background-image: linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
 }
 
-/* line 50, ../scss/module/_gameComponents.scss */
+/* line 46, ../scss/module/_gameComponents.scss */
+.fps {
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  right: 10px;
+  font-weight: 800;
+  font-size: 2em;
+  color: white;
+}
+
+/* line 60, ../scss/module/_gameComponents.scss */
 .l-game-toolbar {
   height: 45px;
 }
 
-/* line 55, ../scss/module/_gameComponents.scss */
+/* line 65, ../scss/module/_gameComponents.scss */
 .widget-game-dialog {
   position: absolute;
   top: 370px;
@@ -759,7 +770,7 @@ ul {
   width: 950px;
   height: 110px;
 }
-/* line 62, ../scss/module/_gameComponents.scss */
+/* line 72, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .speaker {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -788,7 +799,7 @@ ul {
   border: 1px solid #000;
   position: relative;
 }
-/* line 76, ../scss/module/_gameComponents.scss */
+/* line 86, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .image {
   position: absolute;
   top: 0;
@@ -797,7 +808,7 @@ ul {
   right: 0;
   margin: auto;
 }
-/* line 85, ../scss/module/_gameComponents.scss */
+/* line 95, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .text {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -823,11 +834,11 @@ ul {
   border: 1px solid #000;
 }
 
-/* line 101, ../scss/module/_gameComponents.scss */
+/* line 111, ../scss/module/_gameComponents.scss */
 .widget-action-messages {
   position: relative;
 }
-/* line 104, ../scss/module/_gameComponents.scss */
+/* line 114, ../scss/module/_gameComponents.scss */
 .widget-action-messages .action-message {
   position: absolute;
   width: 900px;
@@ -840,31 +851,31 @@ ul {
   -moz-animation-name: slideOff;
   -webkit-animation-name: slideOff;
 }
-/* line 119, ../scss/module/_gameComponents.scss */
+/* line 129, ../scss/module/_gameComponents.scss */
 .widget-action-messages .positive {
   text-shadow: 0px 0px 15px #00FF55;
   color: #DDFFAA;
 }
-/* line 123, ../scss/module/_gameComponents.scss */
+/* line 133, ../scss/module/_gameComponents.scss */
 .widget-action-messages .negative {
   text-shadow: 0px 0px 15px #FF0000;
   color: #ffcccc;
 }
-/* line 127, ../scss/module/_gameComponents.scss */
+/* line 137, ../scss/module/_gameComponents.scss */
 .widget-action-messages .method {
   text-shadow: 0px 0px 15px #BBBBBB;
   color: white;
 }
 
 @-moz-keyframes slideOff {
-  /* line 134, ../scss/module/_gameComponents.scss */
+  /* line 144, ../scss/module/_gameComponents.scss */
   from {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     bottom: 0;
   }
 
-  /* line 138, ../scss/module/_gameComponents.scss */
+  /* line 148, ../scss/module/_gameComponents.scss */
   to {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -873,14 +884,14 @@ ul {
 }
 
 @-webkit-keyframes slideOff {
-  /* line 145, ../scss/module/_gameComponents.scss */
+  /* line 155, ../scss/module/_gameComponents.scss */
   from {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     bottom: 0;
   }
 
-  /* line 149, ../scss/module/_gameComponents.scss */
+  /* line 159, ../scss/module/_gameComponents.scss */
   to {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -888,7 +899,7 @@ ul {
   }
 }
 
-/* line 155, ../scss/module/_gameComponents.scss */
+/* line 165, ../scss/module/_gameComponents.scss */
 .spell-editor {
   position: relative;
   width: 970px;

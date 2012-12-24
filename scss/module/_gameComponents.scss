@@ -43,6 +43,16 @@
 	}
 }
 
+.fps {
+	position: absolute;
+	z-index: 1000;
+	top: 10px;
+	right: 10px;
+	font-weight: 800;
+	font-size: 2em;
+	color: $color-white;
+}
+
 .l-game {
 	@extend %theme-game-wrapper;
 }
