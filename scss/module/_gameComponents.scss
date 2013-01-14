@@ -82,6 +82,26 @@
 		margin: 0 10px 0 0;
 		padding: none;
 		float: left;
+		position: relative;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+	}
+
+	.item-slot-gold-rune {
+		&:before {
+			height: 6px;
+			width: 6px;
+			background: url("../images/sprites/Runes.png") no-repeat -6px 0;
+		}
 	}
 }
 
