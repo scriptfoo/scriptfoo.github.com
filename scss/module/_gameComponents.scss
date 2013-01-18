@@ -45,9 +45,9 @@
 
 .fps {
 	position: absolute;
-	z-index: 1000;
+	z-index: 10000;
 	top: 10px;
-	right: 10px;
+	left: 10px;
 	font-weight: 800;
 	font-size: 2em;
 	color: $color-white;
@@ -55,6 +55,10 @@
 
 .l-game {
 	@extend %theme-game-wrapper;
+}
+
+.l-game-wrapper {
+	position: relative;
 }
 
 .l-game-toolbar {
@@ -82,12 +86,77 @@
 		margin: 0 10px 0 0;
 		padding: none;
 		float: left;
+		position: relative;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+	}
+
+	.item-slot-gold-rune {
+		&:before {
+			height: 6px;
+			width: 6px;
+			background: url("../images/sprites/Runes.png") no-repeat -6px 0;
+		}
+	}
+}
+
+.widget-inventory {
+	@extend %theme-widget-inventory;
+
+	width: 240px;
+	height: 400px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10000;
+
+	ul {
+		list-style: none;
+		padding: 20px;
+		margin: 35px -10px 0 0;
+	}
+
+	li {
+		height: 30px;
+		width: 30px;
+		margin: 0 10px 10px 0;
+		padding: none;
+		float: left;
+		position: relative;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+	}
+
+	.item-slot-gold-rune {
+		&:before {
+			height: 6px;
+			width: 6px;
+			background: url("../images/sprites/Runes.png") no-repeat -6px 0;
+		}
 	}
 }
 
 .widget-game-dialog {
 	position: absolute;
-	top: 370px;
+	top: 280px;
 	z-index: 50;
 	width: 950px;
 	height: 110px;

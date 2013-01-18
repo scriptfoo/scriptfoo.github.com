@@ -59,6 +59,23 @@ $color-white: #FFFFFF;
 	}
 }
 
+%theme-widget-inventory {
+	background: url("../images/sprites/Backpack.png") no-repeat center 10px $color-fuscous-grey;
+	border-left: 1px solid $color-bleached-cedar;
+
+	li {
+		@include border-radius(3px);
+		@include box-shadow($color-nero 0 0 4px 2px);
+		border: 1px solid $color-bleached-cedar;
+		background: $color-fuscous-grey;
+	}
+
+	li:hover {
+		@include box-shadow($color-bleached-cedar 0 0 7px 2px);
+		border: 1px solid $color-dark-gray;
+	}
+}
+
 %theme-form-button {
 	@include text-shadow(0px 1px 0px rgba($color-black, 0.2));
 
