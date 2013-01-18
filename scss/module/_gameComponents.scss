@@ -133,16 +133,19 @@
 .widget-inventory {
 	@extend %theme-widget-inventory;
 
+	@include transition-property(right);
+	@include transition-duration(0.5s);
+	@include transition-timing-function(ease);
+
 	width: 240px;
 	height: 400px;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: -240px;
 	z-index: 10000;
 
-	display: none;
 	&.open {
-		display: block;
+		right: 0;
 	}
 
 	ul {
@@ -196,7 +199,7 @@
 		height: 100px;
 		width: 100px;
 		float: left;
-		margin-left: 210px;
+		margin-left: 20px;
 		border: 1px solid #000;
 		position: relative;
 	}

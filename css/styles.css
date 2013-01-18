@@ -894,25 +894,36 @@ ul {
 
 /* line 133, ../scss/module/_gameComponents.scss */
 .widget-inventory {
+  -moz-transition-property: right;
+  -webkit-transition-property: right;
+  -o-transition-property: right;
+  transition-property: right;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
   width: 240px;
   height: 400px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -240px;
   z-index: 10000;
-  display: none;
 }
-/* line 144, ../scss/module/_gameComponents.scss */
+/* line 147, ../scss/module/_gameComponents.scss */
 .widget-inventory.open {
-  display: block;
+  right: 0;
 }
-/* line 148, ../scss/module/_gameComponents.scss */
+/* line 151, ../scss/module/_gameComponents.scss */
 .widget-inventory ul {
   list-style: none;
   padding: 20px;
   margin: 35px -10px 0 0;
 }
-/* line 154, ../scss/module/_gameComponents.scss */
+/* line 157, ../scss/module/_gameComponents.scss */
 .widget-inventory li {
   height: 30px;
   width: 30px;
@@ -921,7 +932,7 @@ ul {
   float: left;
   position: relative;
 }
-/* line 162, ../scss/module/_gameComponents.scss */
+/* line 165, ../scss/module/_gameComponents.scss */
 .widget-inventory li:before {
   content: '';
   display: block;
@@ -932,14 +943,14 @@ ul {
   right: 0;
   margin: auto;
 }
-/* line 175, ../scss/module/_gameComponents.scss */
+/* line 178, ../scss/module/_gameComponents.scss */
 .widget-inventory .item-slot-gold-rune:before {
   height: 6px;
   width: 6px;
   background: url("../images/sprites/Runes.png") no-repeat -6px 0;
 }
 
-/* line 183, ../scss/module/_gameComponents.scss */
+/* line 186, ../scss/module/_gameComponents.scss */
 .widget-game-dialog {
   position: absolute;
   top: 280px;
@@ -947,7 +958,7 @@ ul {
   width: 950px;
   height: 110px;
 }
-/* line 190, ../scss/module/_gameComponents.scss */
+/* line 193, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .speaker {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -972,11 +983,11 @@ ul {
   height: 100px;
   width: 100px;
   float: left;
-  margin-left: 210px;
+  margin-left: 20px;
   border: 1px solid #000;
   position: relative;
 }
-/* line 204, ../scss/module/_gameComponents.scss */
+/* line 207, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .image {
   position: absolute;
   top: 0;
@@ -985,7 +996,7 @@ ul {
   right: 0;
   margin: auto;
 }
-/* line 213, ../scss/module/_gameComponents.scss */
+/* line 216, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .text {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1011,11 +1022,11 @@ ul {
   border: 1px solid #000;
 }
 
-/* line 229, ../scss/module/_gameComponents.scss */
+/* line 232, ../scss/module/_gameComponents.scss */
 .widget-action-messages {
   position: relative;
 }
-/* line 232, ../scss/module/_gameComponents.scss */
+/* line 235, ../scss/module/_gameComponents.scss */
 .widget-action-messages .action-message {
   position: absolute;
   width: 900px;
@@ -1028,31 +1039,31 @@ ul {
   -moz-animation-name: slideOff;
   -webkit-animation-name: slideOff;
 }
-/* line 247, ../scss/module/_gameComponents.scss */
+/* line 250, ../scss/module/_gameComponents.scss */
 .widget-action-messages .positive {
   text-shadow: 0px 0px 15px #00FF55;
   color: #DDFFAA;
 }
-/* line 251, ../scss/module/_gameComponents.scss */
+/* line 254, ../scss/module/_gameComponents.scss */
 .widget-action-messages .negative {
   text-shadow: 0px 0px 15px #FF0000;
   color: #ffcccc;
 }
-/* line 255, ../scss/module/_gameComponents.scss */
+/* line 258, ../scss/module/_gameComponents.scss */
 .widget-action-messages .method {
   text-shadow: 0px 0px 15px #BBBBBB;
   color: white;
 }
 
 @-moz-keyframes slideOff {
-  /* line 262, ../scss/module/_gameComponents.scss */
+  /* line 265, ../scss/module/_gameComponents.scss */
   from {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     bottom: 0;
   }
 
-  /* line 266, ../scss/module/_gameComponents.scss */
+  /* line 269, ../scss/module/_gameComponents.scss */
   to {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -1061,14 +1072,14 @@ ul {
 }
 
 @-webkit-keyframes slideOff {
-  /* line 273, ../scss/module/_gameComponents.scss */
+  /* line 276, ../scss/module/_gameComponents.scss */
   from {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     bottom: 0;
   }
 
-  /* line 277, ../scss/module/_gameComponents.scss */
+  /* line 280, ../scss/module/_gameComponents.scss */
   to {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -1076,7 +1087,7 @@ ul {
   }
 }
 
-/* line 283, ../scss/module/_gameComponents.scss */
+/* line 286, ../scss/module/_gameComponents.scss */
 .spell-editor {
   position: relative;
   width: 970px;
