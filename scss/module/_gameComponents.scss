@@ -109,6 +109,27 @@
 	}
 }
 
+.l-toolbar-inventory {
+	display: block;
+	float: right;
+	height: 45px;
+	width: 45px;
+
+	&:before {
+		content: '';
+		display: block;
+		width: 39px;
+		height: 100%;
+		background: url('../images/sprites/Backpacks.png') no-repeat -80px 10px;
+	}
+	&.active {
+		&:before {
+			width: 37px;
+			background-position: -40px 3px;
+		}
+	}
+}
+
 .widget-inventory {
 	@extend %theme-widget-inventory;
 
@@ -118,6 +139,11 @@
 	top: 0;
 	right: 0;
 	z-index: 10000;
+
+	display: none;
+	&.open {
+		display: block;
+	}
 
 	ul {
 		list-style: none;
