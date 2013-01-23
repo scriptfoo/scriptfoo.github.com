@@ -109,15 +109,44 @@
 	}
 }
 
+.l-toolbar-inventory {
+	display: block;
+	float: right;
+	height: 45px;
+	width: 45px;
+
+	&:before {
+		content: '';
+		display: block;
+		width: 39px;
+		height: 100%;
+		background: url('../images/sprites/Backpacks.png') no-repeat -80px 10px;
+	}
+	&.active {
+		&:before {
+			width: 37px;
+			background-position: -40px 3px;
+		}
+	}
+}
+
 .widget-inventory {
 	@extend %theme-widget-inventory;
+
+	@include transition-property(right);
+	@include transition-duration(0.5s);
+	@include transition-timing-function(ease);
 
 	width: 240px;
 	height: 400px;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: -240px;
 	z-index: 10000;
+
+	&.open {
+		right: 0;
+	}
 
 	ul {
 		list-style: none;
@@ -170,7 +199,7 @@
 		height: 100px;
 		width: 100px;
 		float: left;
-		margin-left: 210px;
+		margin-left: 20px;
 		border: 1px solid #000;
 		position: relative;
 	}
