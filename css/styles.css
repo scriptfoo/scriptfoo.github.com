@@ -746,23 +746,34 @@ ul {
   padding: 5px 15px;
 }
 
-/* line 2, ../scss/module/_gameComponents.scss */
-#cr-stage:before {
-  content: ' ';
+/* line 1, ../scss/module/_gameComponents.scss */
+#cr-stage {
+  -webkit-transition: background 60s linear;
+  -moz-transition: background 60s linear;
+  -o-transition: background 60s linear;
+  transition: background 60s linear;
+}
+/* line 8, ../scss/module/_gameComponents.scss */
+#cr-stage .day-state {
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: block;
-  z-index: 1000;
+  z-index: 500;
+  -webkit-transition: opacity 60s linear;
+  -moz-transition: opacity 60s linear;
+  -o-transition: opacity 60s linear;
+  transition: opacity 60s linear;
 }
-/* line 13, ../scss/module/_gameComponents.scss */
-#cr-stage.day {
-  background-color: #A5B89B;
+/* line 23, ../scss/module/_gameComponents.scss */
+#cr-stage .day-state-active {
+  opacity: 1;
 }
-/* line 16, ../scss/module/_gameComponents.scss */
-#cr-stage.day:before {
+/* line 27, ../scss/module/_gameComponents.scss */
+#cr-stage .day {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(177, 212, 198, 0.8)), color-stop(50%, rgba(177, 212, 198, 0)), color-stop(100%, rgba(177, 212, 198, 0)));
   background-image: -webkit-linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
   background-image: -moz-linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
@@ -770,12 +781,8 @@ ul {
   background-image: -ms-linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
   background-image: linear-gradient(rgba(177, 212, 198, 0.8), rgba(177, 212, 198, 0), rgba(177, 212, 198, 0));
 }
-/* line 21, ../scss/module/_gameComponents.scss */
-#cr-stage.dayFoggy {
-  background-color: #889A8E;
-}
-/* line 24, ../scss/module/_gameComponents.scss */
-#cr-stage.dayFoggy:before {
+/* line 31, ../scss/module/_gameComponents.scss */
+#cr-stage .dayFoggy {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(247, 237, 255, 0.8)), color-stop(100%, rgba(247, 237, 255, 0.3)));
   background-image: -webkit-linear-gradient(rgba(247, 237, 255, 0.8), rgba(247, 237, 255, 0.3));
   background-image: -moz-linear-gradient(rgba(247, 237, 255, 0.8), rgba(247, 237, 255, 0.3));
@@ -783,12 +790,8 @@ ul {
   background-image: -ms-linear-gradient(rgba(247, 237, 255, 0.8), rgba(247, 237, 255, 0.3));
   background-image: linear-gradient(rgba(247, 237, 255, 0.8), rgba(247, 237, 255, 0.3));
 }
-/* line 29, ../scss/module/_gameComponents.scss */
-#cr-stage.evening {
-  background-color: #806363;
-}
-/* line 32, ../scss/module/_gameComponents.scss */
-#cr-stage.evening:before {
+/* line 35, ../scss/module/_gameComponents.scss */
+#cr-stage .evening {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(184, 212, 177, 0.8)), color-stop(50%, rgba(184, 212, 177, 0)), color-stop(100%, rgba(184, 212, 177, 0)));
   background-image: -webkit-linear-gradient(rgba(184, 212, 177, 0.8), rgba(184, 212, 177, 0), rgba(184, 212, 177, 0));
   background-image: -moz-linear-gradient(rgba(184, 212, 177, 0.8), rgba(184, 212, 177, 0), rgba(184, 212, 177, 0));
@@ -796,12 +799,8 @@ ul {
   background-image: -ms-linear-gradient(rgba(184, 212, 177, 0.8), rgba(184, 212, 177, 0), rgba(184, 212, 177, 0));
   background-image: linear-gradient(rgba(184, 212, 177, 0.8), rgba(184, 212, 177, 0), rgba(184, 212, 177, 0));
 }
-/* line 37, ../scss/module/_gameComponents.scss */
-#cr-stage.night {
-  background-color: #63807B;
-}
-/* line 40, ../scss/module/_gameComponents.scss */
-#cr-stage.night:before {
+/* line 39, ../scss/module/_gameComponents.scss */
+#cr-stage .night {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(30, 30, 42, 0.8)), color-stop(50%, rgba(30, 30, 42, 0)), color-stop(100%, rgba(30, 30, 42, 0)));
   background-image: -webkit-linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
   background-image: -moz-linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
@@ -809,8 +808,24 @@ ul {
   background-image: -ms-linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
   background-image: linear-gradient(rgba(30, 30, 42, 0.8), rgba(30, 30, 42, 0), rgba(30, 30, 42, 0));
 }
+/* line 43, ../scss/module/_gameComponents.scss */
+#cr-stage.day {
+  background-color: #A5B89B;
+}
+/* line 47, ../scss/module/_gameComponents.scss */
+#cr-stage.dayFoggy {
+  background-color: #889A8E;
+}
+/* line 51, ../scss/module/_gameComponents.scss */
+#cr-stage.evening {
+  background-color: #806363;
+}
+/* line 55, ../scss/module/_gameComponents.scss */
+#cr-stage.night {
+  background-color: #63807B;
+}
 
-/* line 46, ../scss/module/_gameComponents.scss */
+/* line 60, ../scss/module/_gameComponents.scss */
 .fps {
   position: absolute;
   z-index: 10000;
@@ -821,30 +836,30 @@ ul {
   color: white;
 }
 
-/* line 60, ../scss/module/_gameComponents.scss */
+/* line 74, ../scss/module/_gameComponents.scss */
 .l-game-wrapper {
   position: relative;
 }
 
-/* line 64, ../scss/module/_gameComponents.scss */
+/* line 78, ../scss/module/_gameComponents.scss */
 .l-game-toolbar {
   height: 45px;
 }
-/* line 68, ../scss/module/_gameComponents.scss */
+/* line 82, ../scss/module/_gameComponents.scss */
 .l-game-toolbar .cast {
   float: left;
 }
 
-/* line 73, ../scss/module/_gameComponents.scss */
+/* line 87, ../scss/module/_gameComponents.scss */
 .l-toolbar-runes {
   float: left;
 }
-/* line 78, ../scss/module/_gameComponents.scss */
+/* line 92, ../scss/module/_gameComponents.scss */
 .l-toolbar-runes ul {
   list-style: none;
   padding: 7px 7px;
 }
-/* line 83, ../scss/module/_gameComponents.scss */
+/* line 97, ../scss/module/_gameComponents.scss */
 .l-toolbar-runes li {
   height: 30px;
   width: 30px;
@@ -853,7 +868,7 @@ ul {
   float: left;
   position: relative;
 }
-/* line 91, ../scss/module/_gameComponents.scss */
+/* line 105, ../scss/module/_gameComponents.scss */
 .l-toolbar-runes li:before {
   content: '';
   display: block;
@@ -864,21 +879,21 @@ ul {
   right: 0;
   margin: auto;
 }
-/* line 104, ../scss/module/_gameComponents.scss */
+/* line 118, ../scss/module/_gameComponents.scss */
 .l-toolbar-runes .item-slot-gold-rune:before {
   height: 6px;
   width: 6px;
   background: url("../images/sprites/Runes.png") no-repeat -6px 0;
 }
 
-/* line 112, ../scss/module/_gameComponents.scss */
+/* line 126, ../scss/module/_gameComponents.scss */
 .l-toolbar-inventory {
   display: block;
   float: right;
   height: 45px;
   width: 45px;
 }
-/* line 118, ../scss/module/_gameComponents.scss */
+/* line 132, ../scss/module/_gameComponents.scss */
 .l-toolbar-inventory:before {
   content: '';
   display: block;
@@ -886,13 +901,13 @@ ul {
   height: 100%;
   background: url("../images/sprites/Backpacks.png") no-repeat -80px 10px;
 }
-/* line 126, ../scss/module/_gameComponents.scss */
+/* line 140, ../scss/module/_gameComponents.scss */
 .l-toolbar-inventory.active:before {
   width: 37px;
   background-position: -40px 3px;
 }
 
-/* line 133, ../scss/module/_gameComponents.scss */
+/* line 147, ../scss/module/_gameComponents.scss */
 .widget-inventory {
   -moz-transition-property: right;
   -webkit-transition-property: right;
@@ -913,17 +928,17 @@ ul {
   right: -240px;
   z-index: 10000;
 }
-/* line 147, ../scss/module/_gameComponents.scss */
+/* line 161, ../scss/module/_gameComponents.scss */
 .widget-inventory.open {
   right: 0;
 }
-/* line 151, ../scss/module/_gameComponents.scss */
+/* line 165, ../scss/module/_gameComponents.scss */
 .widget-inventory ul {
   list-style: none;
   padding: 20px;
   margin: 35px -10px 0 0;
 }
-/* line 157, ../scss/module/_gameComponents.scss */
+/* line 171, ../scss/module/_gameComponents.scss */
 .widget-inventory li {
   height: 30px;
   width: 30px;
@@ -932,7 +947,7 @@ ul {
   float: left;
   position: relative;
 }
-/* line 165, ../scss/module/_gameComponents.scss */
+/* line 179, ../scss/module/_gameComponents.scss */
 .widget-inventory li:before {
   content: '';
   display: block;
@@ -943,22 +958,22 @@ ul {
   right: 0;
   margin: auto;
 }
-/* line 178, ../scss/module/_gameComponents.scss */
+/* line 192, ../scss/module/_gameComponents.scss */
 .widget-inventory .item-slot-gold-rune:before {
   height: 6px;
   width: 6px;
   background: url("../images/sprites/Runes.png") no-repeat -6px 0;
 }
 
-/* line 186, ../scss/module/_gameComponents.scss */
+/* line 200, ../scss/module/_gameComponents.scss */
 .widget-game-dialog {
   position: absolute;
   top: 280px;
-  z-index: 50;
+  z-index: 1000;
   width: 950px;
   height: 110px;
 }
-/* line 193, ../scss/module/_gameComponents.scss */
+/* line 207, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .speaker {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -987,7 +1002,7 @@ ul {
   border: 1px solid #000;
   position: relative;
 }
-/* line 207, ../scss/module/_gameComponents.scss */
+/* line 221, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .image {
   position: absolute;
   top: 0;
@@ -996,7 +1011,7 @@ ul {
   right: 0;
   margin: auto;
 }
-/* line 216, ../scss/module/_gameComponents.scss */
+/* line 230, ../scss/module/_gameComponents.scss */
 .widget-game-dialog .text {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1022,11 +1037,11 @@ ul {
   border: 1px solid #000;
 }
 
-/* line 232, ../scss/module/_gameComponents.scss */
+/* line 246, ../scss/module/_gameComponents.scss */
 .widget-action-messages {
   position: relative;
 }
-/* line 235, ../scss/module/_gameComponents.scss */
+/* line 249, ../scss/module/_gameComponents.scss */
 .widget-action-messages .action-message {
   position: absolute;
   width: 900px;
@@ -1039,31 +1054,31 @@ ul {
   -moz-animation-name: slideOff;
   -webkit-animation-name: slideOff;
 }
-/* line 250, ../scss/module/_gameComponents.scss */
+/* line 264, ../scss/module/_gameComponents.scss */
 .widget-action-messages .positive {
   text-shadow: 0px 0px 15px #00FF55;
   color: #DDFFAA;
 }
-/* line 254, ../scss/module/_gameComponents.scss */
+/* line 268, ../scss/module/_gameComponents.scss */
 .widget-action-messages .negative {
   text-shadow: 0px 0px 15px #FF0000;
   color: #ffcccc;
 }
-/* line 258, ../scss/module/_gameComponents.scss */
+/* line 272, ../scss/module/_gameComponents.scss */
 .widget-action-messages .method {
   text-shadow: 0px 0px 15px #BBBBBB;
   color: white;
 }
 
 @-moz-keyframes slideOff {
-  /* line 265, ../scss/module/_gameComponents.scss */
+  /* line 279, ../scss/module/_gameComponents.scss */
   from {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     bottom: 0;
   }
 
-  /* line 269, ../scss/module/_gameComponents.scss */
+  /* line 283, ../scss/module/_gameComponents.scss */
   to {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -1072,14 +1087,14 @@ ul {
 }
 
 @-webkit-keyframes slideOff {
-  /* line 276, ../scss/module/_gameComponents.scss */
+  /* line 290, ../scss/module/_gameComponents.scss */
   from {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     bottom: 0;
   }
 
-  /* line 280, ../scss/module/_gameComponents.scss */
+  /* line 294, ../scss/module/_gameComponents.scss */
   to {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -1087,7 +1102,7 @@ ul {
   }
 }
 
-/* line 286, ../scss/module/_gameComponents.scss */
+/* line 300, ../scss/module/_gameComponents.scss */
 .spell-editor {
   position: relative;
   width: 970px;

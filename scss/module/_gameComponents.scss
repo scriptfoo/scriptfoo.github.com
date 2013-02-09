@@ -1,45 +1,59 @@
 #cr-stage {
-	&:before {
-		content: ' ';
+
+	-webkit-transition: background 60s linear;
+	-moz-transition: background 60s linear;
+	-o-transition: background 60s linear;
+	transition: background 60s linear;
+
+	.day-state {
+		opacity: 0;
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
 		display: block;
-		z-index: 1000;
+		z-index: 500;
+
+		-webkit-transition: opacity 60s linear;
+		-moz-transition: opacity 60s linear;
+		-o-transition: opacity 60s linear;
+		transition: opacity 60s linear;
+	}
+	.day-state-active {
+		opacity: 1;
+	}
+
+	.day {
+		@include background-image(linear-gradient(rgba(#B1D4C6, 0.8), rgba(#B1D4C6, 0), rgba(#B1D4C6, 0)));
+	}
+
+	.dayFoggy {
+		@include background-image(linear-gradient(rgba(#F7EDFF, 0.8), rgba(#F7EDFF, 0.3)));
+	}
+
+	.evening {
+		@include background-image(linear-gradient(rgba(#B8D4B1, 0.8), rgba(#B8D4B1, 0), rgba(#B8D4B1, 0)));
+	}
+
+	.night {
+		@include background-image(linear-gradient(rgba(#1E1E2A, 0.8), rgba(#1E1E2A, 0), rgba(#1E1E2A, 0)));
 	}
 
 	&.day {
 		background-color: #A5B89B;
-
-		&:before {
-			@include background-image(linear-gradient(rgba(#B1D4C6, 0.8), rgba(#B1D4C6, 0), rgba(#B1D4C6, 0)));
-		}
 	}
 
 	&.dayFoggy {
 		background-color: #889A8E;
-
-		&:before {
-			@include background-image(linear-gradient(rgba(#F7EDFF, 0.8), rgba(#F7EDFF, 0.3)));
-		}
 	}
 
 	&.evening {
 		background-color: #806363;
-
-		&:before {
-			@include background-image(linear-gradient(rgba(#B8D4B1, 0.8), rgba(#B8D4B1, 0), rgba(#B8D4B1, 0)));
-		}
 	}
 
 	&.night {
 		background-color: #63807B;
-
-		&:before {
-			@include background-image(linear-gradient(rgba(#1E1E2A, 0.8), rgba(#1E1E2A, 0), rgba(#1E1E2A, 0)));
-		}
 	}
 }
 
@@ -186,7 +200,7 @@
 .widget-game-dialog {
 	position: absolute;
 	top: 280px;
-	z-index: 50;
+	z-index: 1000;
 	width: 950px;
 	height: 110px;
 
