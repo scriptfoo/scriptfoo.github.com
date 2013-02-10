@@ -1,9 +1,11 @@
 #cr-stage {
 
-	-webkit-transition: background 60s linear;
-	-moz-transition: background 60s linear;
-	-o-transition: background 60s linear;
-	transition: background 60s linear;
+	&.animated-day-transitions {
+		-webkit-transition: background 60s linear;
+		-moz-transition: background 60s linear;
+		-o-transition: background 60s linear;
+		transition: background 60s linear;
+	}
 
 	.day-state {
 		opacity: 0;
@@ -15,10 +17,12 @@
 		display: block;
 		z-index: 500;
 
-		-webkit-transition: opacity 60s linear;
-		-moz-transition: opacity 60s linear;
-		-o-transition: opacity 60s linear;
-		transition: opacity 60s linear;
+		&.animated-day-transitions {
+			-webkit-transition: opacity 60s linear;
+			-moz-transition: opacity 60s linear;
+			-o-transition: opacity 60s linear;
+			transition: opacity 60s linear;
+		}
 	}
 	.day-state-active {
 		opacity: 1;
